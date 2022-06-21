@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>app name generator</title>
 </head>
+
 <body>
   <h3>app name generator</h3>
-  <h1 id="name"></h1>
-  <button id="generate" onClick="window.location.reload();">generate new name</button>
+  <h5>select the number of characters</h5>
+  <label>
+    <input type="radio" name="radAnswer" value="four" onclick="generateName(this.value);"> Four chars
+  </label>
+  <label>
+    <input type="radio" name="radAnswer" value="five" onclick="generateName(this.value);"> Five chars
+  </label>
+  <label>
+    <input type="radio" name="radAnswer" value="six" onclick="generateName(this.value);"> Six chars
+  </label>
+  <label>
+    <input type="radio" name="radAnswer" value="seven" onclick="generateName(this.value);"> Seven chars
+  </label>
+  <div id="div1"></div>
 </body>
 <script src="./nameGenerator.js"></script>
+
 </html>
